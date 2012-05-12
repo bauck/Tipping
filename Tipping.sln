@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tipping.Web", "Tipping\Tipping.Web.csproj", "{C0136397-0280-401C-A14E-0EA7D27C9CED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tipping.Tests", "Tipping.Tests\Tipping.Tests.csproj", "{2C4CD9B9-AA0C-4CFE-8E61-F13CBB2EBB43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tipping.Domain", "Tipping.Domain\Tipping.Domain.csproj", "{C04630B5-402E-4D28-A153-A21C92E0F5A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0136397-0280-401C-A14E-0EA7D27C9CED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0136397-0280-401C-A14E-0EA7D27C9CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0136397-0280-401C-A14E-0EA7D27C9CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0136397-0280-401C-A14E-0EA7D27C9CED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C4CD9B9-AA0C-4CFE-8E61-F13CBB2EBB43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4CD9B9-AA0C-4CFE-8E61-F13CBB2EBB43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C4CD9B9-AA0C-4CFE-8E61-F13CBB2EBB43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C4CD9B9-AA0C-4CFE-8E61-F13CBB2EBB43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C04630B5-402E-4D28-A153-A21C92E0F5A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C04630B5-402E-4D28-A153-A21C92E0F5A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C04630B5-402E-4D28-A153-A21C92E0F5A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C04630B5-402E-4D28-A153-A21C92E0F5A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

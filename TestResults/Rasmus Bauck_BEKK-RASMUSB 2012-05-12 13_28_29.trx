@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7fd94f51-b894-4b0e-89ad-805982ed0620" name="Rasmus Bauck@BEKK-RASMUSB 2012-05-12 13:28:29" runUser="BEKKNO\Rasmus Bauck" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="cb77fdb5-1c82-459e-adae-ad4621b5d8b4">
+    <Deployment userDeploymentRoot="D:\projects\Tipping\TestResults" useDefaultDeploymentRoot="false" runDeploymentRoot="Rasmus Bauck_BEKK-RASMUSB 2012-05-12 13_28_29">
+      <DeploymentItem filename="D:\projects\Tipping\Tipping.Domain\bin\Debug\Tipping.Domain.dll" />
+      <DeploymentItem filename="D:\projects\Tipping\Tipping\bin\Tipping.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-12T13:28:29.9771916+02:00" queuing="2012-05-12T13:28:30.4172168+02:00" start="2012-05-12T13:28:30.5182225+02:00" finish="2012-05-12T13:28:30.9222456+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="KampIkkeFerdigspiltSkalAlltidGiNullPoeng" storage="d:\projects\tipping\tipping.tests\bin\debug\tipping.tests.dll" id="e4eeb839-924a-d74f-e41f-8b2d7a7e451a">
+      <Execution id="34626f6d-3f9f-40db-b381-f59a56bf8b5a" />
+      <TestMethod codeBase="D:/projects/Tipping/Tipping.Tests/bin/Debug/Tipping.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tipping.Tests.Tipping.Domain.Tests.PoengBeregnerTester, Tipping.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="KampIkkeFerdigspiltSkalAlltidGiNullPoeng" />
+    </UnitTest>
+    <UnitTest name="TipsIkkeLevertSkalAlltidGiNullPoeng" storage="d:\projects\tipping\tipping.tests\bin\debug\tipping.tests.dll" id="6e29a2a4-8a59-9bef-2773-836da5906a7a">
+      <Execution id="621b5c11-2e3d-4aa8-ade7-871f06878f3c" />
+      <TestMethod codeBase="D:/projects/Tipping/Tipping.Tests/bin/Debug/Tipping.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tipping.Tests.Tipping.Domain.Tests.PoengBeregnerTester, Tipping.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TipsIkkeLevertSkalAlltidGiNullPoeng" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="6e29a2a4-8a59-9bef-2773-836da5906a7a" executionId="621b5c11-2e3d-4aa8-ade7-871f06878f3c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e4eeb839-924a-d74f-e41f-8b2d7a7e451a" executionId="34626f6d-3f9f-40db-b381-f59a56bf8b5a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="621b5c11-2e3d-4aa8-ade7-871f06878f3c" testId="6e29a2a4-8a59-9bef-2773-836da5906a7a" testName="TipsIkkeLevertSkalAlltidGiNullPoeng" computerName="BEKK-RASMUSB" duration="00:00:00.0135907" startTime="2012-05-12T13:28:30.6962327+02:00" endTime="2012-05-12T13:28:30.8912439+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="621b5c11-2e3d-4aa8-ade7-871f06878f3c">
+    </UnitTestResult>
+    <UnitTestResult executionId="34626f6d-3f9f-40db-b381-f59a56bf8b5a" testId="e4eeb839-924a-d74f-e41f-8b2d7a7e451a" testName="KampIkkeFerdigspiltSkalAlltidGiNullPoeng" computerName="BEKK-RASMUSB" duration="00:00:00.0002555" startTime="2012-05-12T13:28:30.8952441+02:00" endTime="2012-05-12T13:28:30.8992443+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34626f6d-3f9f-40db-b381-f59a56bf8b5a">
+    </UnitTestResult>
+  </Results>
+</TestRun>

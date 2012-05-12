@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ec71179e-c701-459d-8994-70e1c948a89e" name="Rasmus Bauck@BEKK-RASMUSB 2012-05-12 13:38:20" runUser="BEKKNO\Rasmus Bauck" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="7ad125ea-6315-43b6-b7c3-ae9e2932a17f">
+    <Deployment runDeploymentRoot="Rasmus Bauck_BEKK-RASMUSB 2012-05-12 13_38_20">
+      <DeploymentItem filename="D:\projects\Tipping\Tipping.Domain\bin\Debug\Tipping.Domain.dll" />
+      <DeploymentItem filename="D:\projects\Tipping\Tipping\bin\Tipping.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-12T13:38:20.9999962+02:00" queuing="2012-05-12T13:38:21.2000076+02:00" start="2012-05-12T13:38:21.3270149+02:00" finish="2012-05-12T13:38:22.0100539+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="9" executed="9" passed="9" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="About" storage="d:\projects\tipping\tipping.tests\bin\debug\tipping.tests.dll" id="1e0a5c9f-db49-40fd-b0a7-83e6ac61f990">
+      <Execution id="2efcb4ce-79c0-4922-a78a-5b1cba338b5b" />
+      <TestMethod codeBase="D:/projects/Tipping/Tipping.Tests/bin/Debug/Tipping.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tipping.Tests.Controllers.HomeControllerTest, Tipping.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="About" />
+    </UnitTest>
+    <UnitTest name="TipsIkkeLevertSkalAlltidGiNullPoeng" storage="d:\projects\tipping\tipping.tests\bin\debug\tipping.tests.dll" id="6e29a2a4-8a59-9bef-2773-836da5906a7a">
+      <Execution id="702c50de-32ae-4d29-bd46-2dae96b40d58" />
+      <TestMethod codeBase="D:/projects/Tipping/Tipping.Tests/bin/Debug/Tipping.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tipping.Tests.Tipping.Domain.Tests.PoengBeregnerTester, Tipping.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TipsIkkeLevertSkalAlltidGiNullPoeng" />
+    </UnitTest>
+    <UnitTest name="Contact" storage="d:\projects\tipping\tipping.tests\bin\debug\tipping.tests.dll" id="9088ec97-5456-5b2c-c5c6-1f8040b776fc">
+      <Execution id="88e1ab95-95ae-4e0a-a390-8a68b432406c" />
+      <TestMethod codeBase="D:/projects/Tipping/Tipping.Tests/bin/Debug/Tipping.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tipping.Tests.Controllers.HomeControllerTest, Tipping.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Contact" />
+    </UnitTest>
+    <UnitTest name="KampIkkeFerdigspiltSkalAlltidGiNullPoeng" storage="d:\projects\tipping\tipping.tests\bin\debug\tipping.tests.dll" id="e4eeb839-924a-d74f-e41f-8b2d7a7e451a">
+      <Execution id="5678abd8-2888-4c61-b50c-8af481be4f69" />
+      <TestMethod codeBase="D:/projects/Tipping/Tipping.Tests/bin/Debug/Tipping.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tipping.Tests.Tipping.Domain.Tests.PoengBeregnerTester, Tipping.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="KampIkkeFerdigspiltSkalAlltidGiNullPoeng" />
+    </UnitTest>
+    <UnitTest name="Index" storage="d:\projects\tipping\tipping.tests\bin\debug\tipping.tests.dll" id="3413db79-93bf-7a28-664d-6da1ff034421">
+      <Execution id="455ccb81-0fec-4fd3-8b34-28f404c9be69" />
+      <TestMethod codeBase="D:/projects/Tipping/Tipping.Tests/bin/Debug/Tipping.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tipping.Tests.Controllers.HomeControllerTest, Tipping.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Index" />
+    </UnitTest>
+    <UnitTest name="ForskjelligKampIDOgTipsKampIDSkalAlltidGiNullPoeng" storage="d:\projects\tipping\tipping.tests\bin\debug\tipping.tests.dll" id="729b28c2-6b32-264f-6e93-2282632eb610">
+      <Execution id="e383f4ca-fcaa-45c7-a6de-d2124f65f2a7" />
+      <TestMethod codeBase="D:/projects/Tipping/Tipping.Tests/bin/Debug/Tipping.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tipping.Tests.Tipping.Domain.Tests.PoengBeregnerTester, Tipping.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ForskjelligKampIDOgTipsKampIDSkalAlltidGiNullPoeng" />
+    </UnitTest>
+    <UnitTest name="EksaktRiktigTipsSkalGiFirePoeng" storage="d:\projects\tipping\tipping.tests\bin\debug\tipping.tests.dll" id="7c3d40ef-0a3d-bc0e-7415-c863b6cc761c">
+      <Execution id="4fcdcf67-2ee6-4405-a232-bc462db1c54e" />
+      <TestMethod codeBase="D:/projects/Tipping/Tipping.Tests/bin/Debug/Tipping.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tipping.Tests.Tipping.Domain.Tests.PoengBeregnerTester, Tipping.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EksaktRiktigTipsSkalGiFirePoeng" />
+    </UnitTest>
+    <UnitTest name="KampConstructorFungererSomForventet" storage="d:\projects\tipping\tipping.tests\bin\debug\tipping.tests.dll" id="254f1257-3080-ed23-150f-9e6a5216b171">
+      <Execution id="ee661663-da8a-4430-b70b-db7803897e29" />
+      <TestMethod codeBase="D:/projects/Tipping/Tipping.Tests/bin/Debug/Tipping.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tipping.Tests.Tipping.Domain.Tests.KampTester, Tipping.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="KampConstructorFungererSomForventet" />
+    </UnitTest>
+    <UnitTest name="RiktigUavgjortTippetegnMenFeilResultatSkalGiEttPoeng" storage="d:\projects\tipping\tipping.tests\bin\debug\tipping.tests.dll" id="6373b170-c5f8-84ae-cfe6-85ee62b6dfac">
+      <Execution id="3e56c1d8-b09e-455b-a871-41bfbd97a5a1" />
+      <TestMethod codeBase="D:/projects/Tipping/Tipping.Tests/bin/Debug/Tipping.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tipping.Tests.Tipping.Domain.Tests.PoengBeregnerTester, Tipping.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RiktigUavgjortTippetegnMenFeilResultatSkalGiEttPoeng" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1e0a5c9f-db49-40fd-b0a7-83e6ac61f990" executionId="2efcb4ce-79c0-4922-a78a-5b1cba338b5b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="254f1257-3080-ed23-150f-9e6a5216b171" executionId="ee661663-da8a-4430-b70b-db7803897e29" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3413db79-93bf-7a28-664d-6da1ff034421" executionId="455ccb81-0fec-4fd3-8b34-28f404c9be69" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6373b170-c5f8-84ae-cfe6-85ee62b6dfac" executionId="3e56c1d8-b09e-455b-a871-41bfbd97a5a1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6e29a2a4-8a59-9bef-2773-836da5906a7a" executionId="702c50de-32ae-4d29-bd46-2dae96b40d58" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="729b28c2-6b32-264f-6e93-2282632eb610" executionId="e383f4ca-fcaa-45c7-a6de-d2124f65f2a7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7c3d40ef-0a3d-bc0e-7415-c863b6cc761c" executionId="4fcdcf67-2ee6-4405-a232-bc462db1c54e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9088ec97-5456-5b2c-c5c6-1f8040b776fc" executionId="88e1ab95-95ae-4e0a-a390-8a68b432406c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e4eeb839-924a-d74f-e41f-8b2d7a7e451a" executionId="5678abd8-2888-4c61-b50c-8af481be4f69" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="2efcb4ce-79c0-4922-a78a-5b1cba338b5b" testId="1e0a5c9f-db49-40fd-b0a7-83e6ac61f990" testName="About" computerName="BEKK-RASMUSB" duration="00:00:00.0478210" startTime="2012-05-12T13:38:21.4340210+02:00" endTime="2012-05-12T13:38:21.8090424+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2efcb4ce-79c0-4922-a78a-5b1cba338b5b">
+    </UnitTestResult>
+    <UnitTestResult executionId="ee661663-da8a-4430-b70b-db7803897e29" testId="254f1257-3080-ed23-150f-9e6a5216b171" testName="KampConstructorFungererSomForventet" computerName="BEKK-RASMUSB" duration="00:00:00.0077768" startTime="2012-05-12T13:38:21.8120426+02:00" endTime="2012-05-12T13:38:21.8230432+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ee661663-da8a-4430-b70b-db7803897e29">
+    </UnitTestResult>
+    <UnitTestResult executionId="455ccb81-0fec-4fd3-8b34-28f404c9be69" testId="3413db79-93bf-7a28-664d-6da1ff034421" testName="Index" computerName="BEKK-RASMUSB" duration="00:00:00.0119915" startTime="2012-05-12T13:38:21.8250433+02:00" endTime="2012-05-12T13:38:21.8400442+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="455ccb81-0fec-4fd3-8b34-28f404c9be69">
+    </UnitTestResult>
+    <UnitTestResult executionId="3e56c1d8-b09e-455b-a871-41bfbd97a5a1" testId="6373b170-c5f8-84ae-cfe6-85ee62b6dfac" testName="RiktigUavgjortTippetegnMenFeilResultatSkalGiEttPoeng" computerName="BEKK-RASMUSB" duration="00:00:00.0021799" startTime="2012-05-12T13:38:21.8440444+02:00" endTime="2012-05-12T13:38:21.8490447+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3e56c1d8-b09e-455b-a871-41bfbd97a5a1">
+    </UnitTestResult>
+    <UnitTestResult executionId="702c50de-32ae-4d29-bd46-2dae96b40d58" testId="6e29a2a4-8a59-9bef-2773-836da5906a7a" testName="TipsIkkeLevertSkalAlltidGiNullPoeng" computerName="BEKK-RASMUSB" duration="00:00:00.0002342" startTime="2012-05-12T13:38:21.8510448+02:00" endTime="2012-05-12T13:38:21.8540450+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="702c50de-32ae-4d29-bd46-2dae96b40d58">
+    </UnitTestResult>
+    <UnitTestResult executionId="e383f4ca-fcaa-45c7-a6de-d2124f65f2a7" testId="729b28c2-6b32-264f-6e93-2282632eb610" testName="ForskjelligKampIDOgTipsKampIDSkalAlltidGiNullPoeng" computerName="BEKK-RASMUSB" duration="00:00:00.0007658" startTime="2012-05-12T13:38:21.8580452+02:00" endTime="2012-05-12T13:38:21.8700459+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e383f4ca-fcaa-45c7-a6de-d2124f65f2a7">
+    </UnitTestResult>
+    <UnitTestResult executionId="4fcdcf67-2ee6-4405-a232-bc462db1c54e" testId="7c3d40ef-0a3d-bc0e-7415-c863b6cc761c" testName="EksaktRiktigTipsSkalGiFirePoeng" computerName="BEKK-RASMUSB" duration="00:00:00.0002445" startTime="2012-05-12T13:38:21.8730461+02:00" endTime="2012-05-12T13:38:21.8770463+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4fcdcf67-2ee6-4405-a232-bc462db1c54e">
+    </UnitTestResult>
+    <UnitTestResult executionId="88e1ab95-95ae-4e0a-a390-8a68b432406c" testId="9088ec97-5456-5b2c-c5c6-1f8040b776fc" testName="Contact" computerName="BEKK-RASMUSB" duration="00:00:00.0016886" startTime="2012-05-12T13:38:21.8790464+02:00" endTime="2012-05-12T13:38:21.8900471+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="88e1ab95-95ae-4e0a-a390-8a68b432406c">
+    </UnitTestResult>
+    <UnitTestResult executionId="5678abd8-2888-4c61-b50c-8af481be4f69" testId="e4eeb839-924a-d74f-e41f-8b2d7a7e451a" testName="KampIkkeFerdigspiltSkalAlltidGiNullPoeng" computerName="BEKK-RASMUSB" duration="00:00:00.0002606" startTime="2012-05-12T13:38:21.8930472+02:00" endTime="2012-05-12T13:38:21.8960474+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5678abd8-2888-4c61-b50c-8af481be4f69">
+    </UnitTestResult>
+  </Results>
+</TestRun>

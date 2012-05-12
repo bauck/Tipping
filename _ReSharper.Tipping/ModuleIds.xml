@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="C0136397-0280-401C-A14E-0EA7D27C9CED" ModuleId="Tipping" />
+  <Module PersistentId="C04630B5-402E-4D28-A153-A21C92E0F5A1" ModuleId="Tipping.Domain" />
+  <Module PersistentId="2C4CD9B9-AA0C-4CFE-8E61-F13CBB2EBB43" ModuleId="Tipping.Tests" />
+</Modules>

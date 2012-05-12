@@ -1,0 +1,11 @@
+D:\projects\Tipping\Tipping.Tests\bin\Debug\Tipping.Tests.dll.config
+D:\projects\Tipping\Tipping.Tests\bin\Debug\Tipping.Tests.dll
+D:\projects\Tipping\Tipping.Tests\bin\Debug\Tipping.Tests.pdb
+D:\projects\Tipping\Tipping.Tests\bin\Debug\Tipping.dll
+D:\projects\Tipping\Tipping.Tests\bin\Debug\System.Web.Optimization.dll
+D:\projects\Tipping\Tipping.Tests\bin\Debug\Tipping.pdb
+D:\projects\Tipping\Tipping.Tests\obj\Debug\ResolveAssemblyReference.cache
+D:\projects\Tipping\Tipping.Tests\obj\Debug\Tipping.Tests.dll
+D:\projects\Tipping\Tipping.Tests\obj\Debug\Tipping.Tests.pdb
+D:\projects\Tipping\Tipping.Tests\bin\Debug\Tipping.Domain.dll
+D:\projects\Tipping\Tipping.Tests\bin\Debug\Tipping.Domain.pdb

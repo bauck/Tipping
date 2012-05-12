@@ -1,0 +1,5 @@
+D:\projects\Tipping\Tipping.Domain\bin\Debug\Tipping.Domain.dll
+D:\projects\Tipping\Tipping.Domain\bin\Debug\Tipping.Domain.pdb
+D:\projects\Tipping\Tipping.Domain\obj\Debug\ResolveAssemblyReference.cache
+D:\projects\Tipping\Tipping.Domain\obj\Debug\Tipping.Domain.dll
+D:\projects\Tipping\Tipping.Domain\obj\Debug\Tipping.Domain.pdb
