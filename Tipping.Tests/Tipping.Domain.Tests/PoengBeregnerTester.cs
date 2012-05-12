@@ -123,6 +123,7 @@ namespace Tipping.Tests.Tipping.Domain.Tests
             var tips = new Tips(1, 1, 3, 1, true);
             PoengBeregner.BerengPoeng(kamp, tips);
 
+
             Assert.AreEqual(1, tips.Poeng);
         }
         [TestMethod]
