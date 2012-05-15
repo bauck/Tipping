@@ -9,3 +9,5 @@ D:\projects\Tipping\Tipping.Tests\obj\Debug\Tipping.Tests.dll
 D:\projects\Tipping\Tipping.Tests\obj\Debug\Tipping.Tests.pdb
 D:\projects\Tipping\Tipping.Tests\bin\Debug\Tipping.Domain.dll
 D:\projects\Tipping\Tipping.Tests\bin\Debug\Tipping.Domain.pdb
+D:\projects\Tipping\Tipping.Tests\bin\Debug\Tipping.Data.dll
+D:\projects\Tipping\Tipping.Tests\bin\Debug\Tipping.Data.pdb

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tipping.Tests", "Tipping.Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tipping.Domain", "Tipping.Domain\Tipping.Domain.csproj", "{C04630B5-402E-4D28-A153-A21C92E0F5A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tipping.Data", "Tipping.Data\Tipping.Data.csproj", "{36DEEBBD-96B5-44EA-AEF9-72ACAD9A91D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{C04630B5-402E-4D28-A153-A21C92E0F5A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C04630B5-402E-4D28-A153-A21C92E0F5A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C04630B5-402E-4D28-A153-A21C92E0F5A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36DEEBBD-96B5-44EA-AEF9-72ACAD9A91D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36DEEBBD-96B5-44EA-AEF9-72ACAD9A91D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36DEEBBD-96B5-44EA-AEF9-72ACAD9A91D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36DEEBBD-96B5-44EA-AEF9-72ACAD9A91D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,15 @@
+﻿@model Tipping.Models.KamperViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Kamper</h2>
+
+<div class="main">
+    @foreach(var kamp in Model.Kamper)
+    {
+        <div class="kamp">
+            @kamp.Hjemmelag - @kamp.Bortelag
+        </div>
+    }
+</div>

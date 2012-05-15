@@ -64,7 +64,7 @@ namespace Tipping.Tests.Tipping.Domain.Tests
         public void ForskjelligKampIDOgTipsKampIDSkalAlltidGiNullPoeng()
         {
             var kamp = new Kamp(1, "A", "B", new DateTime(2012, 5, 1, 20, 0, 0), 0, 0, true);
-            var tips = new Tips(2, 1, 0, 0, true);
+            var tips = new Tips(2, "Rasmus", 0, 0, true);
             PoengBeregner.BerengPoeng(kamp, tips);
 
             Assert.AreEqual(0, tips.Poeng);
@@ -74,7 +74,7 @@ namespace Tipping.Tests.Tipping.Domain.Tests
         public void KampIkkeFerdigspiltSkalAlltidGiNullPoeng()
         {
             var kamp = new Kamp(1, "A", "B", new DateTime(2012, 5, 1, 20, 0, 0), 0, 0, false);
-            var tips = new Tips(1, 1, 0, 0, true);
+            var tips = new Tips(1, "Rasmus", 0, 0, true);
             PoengBeregner.BerengPoeng(kamp, tips);
 
             Assert.AreEqual(0, tips.Poeng);
@@ -84,7 +84,7 @@ namespace Tipping.Tests.Tipping.Domain.Tests
         public void TipsIkkeLevertSkalAlltidGiNullPoeng()
         {
             var kamp = new Kamp(1, "A", "B", new DateTime(2012, 5, 1, 20, 0, 0), 0, 0, true);
-            var tips = new Tips(1,1,0,0,false);
+            var tips = new Tips(1, "Rasmus", 0, 0, false);
             PoengBeregner.BerengPoeng(kamp, tips);
 
             Assert.AreEqual(0, tips.Poeng);
@@ -93,7 +93,7 @@ namespace Tipping.Tests.Tipping.Domain.Tests
         public void EksaktRiktigTipsSkalGiFirePoeng()
         {
             var kamp = new Kamp(1, "A", "B", new DateTime(2012, 5, 1, 20, 0, 0), 0, 0, true);
-            var tips = new Tips(1, 1, 0, 0, true);
+            var tips = new Tips(1, "Rasmus", 0, 0, true);
             PoengBeregner.BerengPoeng(kamp, tips);
 
             Assert.AreEqual(4, tips.Poeng);
@@ -102,7 +102,7 @@ namespace Tipping.Tests.Tipping.Domain.Tests
         public void RiktigUavgjortTippetegnMenFeilResultatSkalGiEttPoeng()
         {
             var kamp = new Kamp(1, "A", "B", new DateTime(2012, 5, 1, 20, 0, 0), 0, 0, true);
-            var tips = new Tips(1, 1, 1, 1, true);
+            var tips = new Tips(1, "Rasmus", 1, 1, true);
             PoengBeregner.BerengPoeng(kamp, tips);
 
             Assert.AreEqual(1, tips.Poeng);
@@ -111,7 +111,7 @@ namespace Tipping.Tests.Tipping.Domain.Tests
         public void RiktigDifferanseMenFeilResultatSkalGiToPoeng()
         {
             var kamp = new Kamp(1, "A", "B", new DateTime(2012, 5, 1, 20, 0, 0), 1, 0, true);
-            var tips = new Tips(1, 1, 2, 1, true);
+            var tips = new Tips(1, "Rasmus", 2, 1, true);
             PoengBeregner.BerengPoeng(kamp, tips);
 
             Assert.AreEqual(2, tips.Poeng);
@@ -120,7 +120,7 @@ namespace Tipping.Tests.Tipping.Domain.Tests
         public void RiktigTippeTegnMenFeilDifferanseSkalGiEttPoeng1()
         {
             var kamp = new Kamp(1, "A", "B", new DateTime(2012, 5, 1, 20, 0, 0), 1, 0, true);
-            var tips = new Tips(1, 1, 3, 1, true);
+            var tips = new Tips(1, "Rasmus", 3, 1, true);
             PoengBeregner.BerengPoeng(kamp, tips);
 
 
@@ -130,7 +130,7 @@ namespace Tipping.Tests.Tipping.Domain.Tests
         public void RiktigTippeTegnMenFeilDifferanseSkalGiEttPoeng2()
         {
             var kamp = new Kamp(1, "A", "B", new DateTime(2012, 5, 1, 20, 0, 0), 0, 1, true);
-            var tips = new Tips(1, 1, 1, 3, true);
+            var tips = new Tips(1, "Rasmus", 1, 3, true);
             PoengBeregner.BerengPoeng(kamp, tips);
 
             Assert.AreEqual(1, tips.Poeng);

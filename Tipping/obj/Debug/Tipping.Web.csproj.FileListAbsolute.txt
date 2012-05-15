@@ -34,3 +34,7 @@ D:\projects\Tipping\Tipping\bin\System.Web.WebPages.Razor.xml
 D:\projects\Tipping\Tipping\obj\Debug\ResolveAssemblyReference.cache
 D:\projects\Tipping\Tipping\obj\Debug\Tipping.dll
 D:\projects\Tipping\Tipping\obj\Debug\Tipping.pdb
+D:\projects\Tipping\Tipping\bin\Tipping.Data.dll
+D:\projects\Tipping\Tipping\bin\Tipping.Domain.dll
+D:\projects\Tipping\Tipping\bin\Tipping.Data.pdb
+D:\projects\Tipping\Tipping\bin\Tipping.Domain.pdb

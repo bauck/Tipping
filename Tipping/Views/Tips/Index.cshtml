@@ -1,0 +1,40 @@
+﻿@model Tipping.Models.TipsViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+<script src="@Url.Content("~/Scripts/Tips/Tips.js")"></script>
+<script src="@Url.Content("~/Scripts/Tipping/Tipping.js")"></script>
+<script type="text/javascript">
+    $(function () {
+        settOppLagreTips();
+        bindUrl("LagreTips_Tips", "@Url.Action("LagreTips", "Tips")");
+    });
+</script>
+
+<h2>Tips</h2>
+
+<div class="main">
+    @foreach(var tips in @Model.KampOgTips)
+    {
+        <div class="tips" data-kampID="@tips.KampID">
+            <div>@tips.Avspark.ToString("dd.MM.yyyy HH:mm")</div>
+            <div>@tips.Hjemmelag</div>
+            @if(tips.ErLevert)
+            {
+                <input type="number" class="hjemmelag" min="0" value="@tips.MålHjemmelag" />
+            } else
+            {
+                <input type="number" class="hjemmelag" min="0" />
+            }
+            <div> - </div>
+            @if(tips.ErLevert)
+            {
+                <input type="number" class="bortelag" min="0" value="@tips.MålBortelag" />
+            } else
+            {
+                <input type="number" class="bortelag" min="0" />
+            }            <div>@tips.Bortelag</div>
+        </div>
+    }
+</div>

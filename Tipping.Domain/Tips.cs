@@ -7,7 +7,7 @@ namespace Tipping.Domain
 {
     public class Tips
     {
-        public Tips(int kampID, int tipperID, int målHjemmelag, int målBortelag, bool erLevert)
+        public Tips(int kampID, string tipperID, int målHjemmelag, int målBortelag, bool erLevert)
         {
             KampID = kampID;
             TipperID = tipperID;
@@ -19,7 +19,7 @@ namespace Tipping.Domain
             Poeng = 0;
         }
 
-        public Tips(int kampID, int tipperID, int målHjemmelag, int målBortelag, bool erLevert, bool erBeregnet, int poeng)
+        public Tips(int kampID, string tipperID, int målHjemmelag, int målBortelag, bool erLevert, bool erBeregnet, int poeng)
         {
             KampID = kampID;
             TipperID = tipperID;
@@ -30,7 +30,7 @@ namespace Tipping.Domain
             Poeng = ErBeregnet ? poeng : 0;
         }
         public int KampID { get; set; }
-        public int TipperID { get; set; }
+        public string TipperID { get; set; }
         public int MålHjemmelag { get; set; }
         public int MålBortelag { get; set; }
         public bool ErLevert { get; set; }

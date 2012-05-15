@@ -26,8 +26,8 @@ namespace Tipping.Domain
         public DateTime Avspark { get; set; }
         public string Bortelag { get; set; }
         public string Hjemmelag { get; set; }
-        public int? MålHjemmelag { get; set; }
-        public int? MålBortelag { get; set; }
+        public int MålHjemmelag { get; set; }
+        public int MålBortelag { get; set; }
         public Boolean ErFerdigspilt { get; set; }
     }
 }
