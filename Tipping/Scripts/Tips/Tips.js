@@ -12,7 +12,7 @@
                 type: "POST",
                 data: {kampID: kampid, målHjemmelag: maalHjemmelag, målBortelag: maalBortelag},
                 success: function (returdata) {
-                    alert("Great success " + returdata);
+                    //alert("Great success " + returdata);
                 }
             });
         }

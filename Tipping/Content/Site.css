@@ -1,12 +1,12 @@
 ﻿html {
-    background-color: #e2e2e2;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #fff;
-    border-top: solid 10px #000;
+    background-color: #ffffff;
+    border-top: solid 10px #999;
     color: #333;
     font-size: .85em;
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
@@ -56,7 +56,7 @@ nav, section {
 
 h1, h2, h3,
 h4, h5, h6 {
-    color: #000;
+    color: #999;
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -90,7 +90,7 @@ h5, h6 {
 }
 
 #body {
-    background-color: #efeeef;
+    background-color: #ffffff;
     clear: both;
     padding-bottom: 35px;
 }
@@ -107,7 +107,7 @@ h5, h6 {
 
 footer {
     clear: both;
-    background-color: #e2e2e2;
+    background-color: #ffffff;
     font-size: .8em;
     height: 100px;
 }
@@ -116,7 +116,7 @@ footer {
 /* site title
 ----------------------------------------------------------*/
 .site-title {
-    color: #c8c8c8;
+    color: #999;
     font-family: Rockwell, Consolas, "Courier New", Courier, monospace;
     font-size: 2.3em;
     margin: 20px 0;
@@ -124,7 +124,7 @@ footer {
 
 .site-title a, .site-title a:hover, .site-title a:active {
     background: none;
-    color: #c8c8c8;
+    color: #999;
     outline: none;
     text-decoration: none;
 }
@@ -140,11 +140,12 @@ footer {
 }
 
     #login a {
-        background-color: #d3dce0;
+        background-color: #999;
         margin-left: 10px;
         margin-right: 3px;
         padding: 2px 3px;
         text-decoration: none;
+        color: #ffffff;
     }
 
     #login a.username {

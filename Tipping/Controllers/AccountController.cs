@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
@@ -86,6 +87,30 @@ namespace Tipping.Controllers
             FormsAuthentication.SignOut();
 
             return RedirectToAction("Index", "Home");
+        }
+
+        [AllowAnonymous]
+        public ActionResult ForgotPassword()
+        {
+            return View("ForgotPassword");
+        }
+
+        [AllowAnonymous]
+        [HttpPost]
+        public JsonResult SendPassword(string eMail)
+        {
+            var username = Membership.GetUserNameByEmail(eMail);
+            if (string.IsNullOrEmpty(username))
+                return Json(new {mailSent = false});
+            var user = Membership.GetUser(username);
+            if (user == null)
+                return Json(new { mailSent = false });
+
+            var smtpClient = new SmtpClient();
+            var mail = new MailMessage("no-reply@tipping.apphb.com", user.Email, "Passord",
+                                       "Ditt passord er: " + user.GetPassword());
+            smtpClient.Send(mail);
+            return Json(new { mailSent = true });
         }
 
         //
