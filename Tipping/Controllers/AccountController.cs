@@ -108,9 +108,9 @@ namespace Tipping.Controllers
 
             var smtpClient = new SmtpClient();
             var mail = new MailMessage("no-reply@tipping.apphb.com", user.Email, "Passord",
-                                       "Ditt passord er: " + user.GetPassword());
+                                       "Ditt nye passord er: " + user.ResetPassword());
             smtpClient.Send(mail);
-            return Json(new { mailSent = true });
+            return Json(new { mailSent = true }, JsonRequestBehavior.DenyGet);
         }
 
         //
