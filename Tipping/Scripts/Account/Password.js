@@ -1,6 +1,5 @@
 ﻿$(function() {
     $("#SendPassword").click(function (e) {
-        alert("hei");
         e.preventDefault();
         var eMail = $("#Email").val();
         $.ajax(getUrl("SendPassword_Account"), {
