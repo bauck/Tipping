@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bonus.cs" />
+    <Compile Include="BonusTips.cs" />
     <Compile Include="Kamp.cs" />
     <Compile Include="PoengBeregner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

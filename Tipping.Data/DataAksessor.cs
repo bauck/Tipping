@@ -154,7 +154,129 @@ namespace Tipping.Data
             }
             catch (Exception ex)
             {
-                throw new Exception("Kunne ikke hente kamp fra databasen", ex);
+                throw new Exception("Kunne ikke lagre tips i databasen", ex);
+            }
+        }
+
+        public static List<Bonus> HentAlleBonus()
+        {
+            var bonuser = new List<Bonus>();
+            try
+            {
+                using (var sqlConnection = new SqlConnection(HentTilkoblingsdata()))
+                {
+                    sqlConnection.Open();
+                    const string bonusCommandText = @"SELECT * FROM Bonus order by ID";
+                    var bonusCommand = new SqlCommand(bonusCommandText, sqlConnection);
+
+                    using (var adapter = new SqlDataAdapter(bonusCommand))
+                    {
+                        var bonusTabell = new DataTable();
+                        adapter.Fill(bonusTabell);
+                        bonuser.AddRange(from DataRow rad in bonusTabell.Rows select new Bonus(Convert.ToInt32(rad["ID"]), Convert.ToString(rad["Sporsmaal"]), Convert.ToString(rad["Svar"]), Convert.ToString(rad["Frist"]).FraDBStringTilDato(), Convert.ToBoolean(rad["ErFerdigspilt"])));
+                    }
+                    sqlConnection.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Kunne ikke hente bonusspørsmål fra databasen", ex);
+            }
+            return bonuser;
+
+        }
+        public static List<BonusTips> HentAlleBonusTipsForBruker(string brukernavn)
+        {
+            var bonusTips = new List<BonusTips>();
+            try
+            {
+                using (var sqlConnection = new SqlConnection(HentTilkoblingsdata()))
+                {
+                    sqlConnection.Open();
+                    const string bonusTipsCommandText = @"SELECT * FROM BonusTips WHERE [TipperID] = @Brukernavn";
+                    var bonusTipsCommand = new SqlCommand(bonusTipsCommandText, sqlConnection);
+                    bonusTipsCommand.Parameters.Add("@Brukernavn", SqlDbType.VarChar);
+                    bonusTipsCommand.Parameters["@Brukernavn"].Value = brukernavn;
+
+                    using (var adapter = new SqlDataAdapter(bonusTipsCommand))
+                    {
+                        var bonusTipsTabell = new DataTable();
+                        adapter.Fill(bonusTipsTabell);
+                        bonusTips.AddRange(from DataRow rad in bonusTipsTabell.Rows select new BonusTips(Convert.ToInt32(rad["BonusID"]), brukernavn, Convert.ToString(rad["Svar"]), Convert.ToBoolean(rad["ErLevert"]), Convert.ToBoolean(rad["ErBeregnet"]), Convert.ToInt32(rad["Poeng"])));
+                    }
+                    sqlConnection.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Kunne ikke hente tips fra databasen", ex);
+            }
+            return bonusTips;
+        }
+
+        public static Bonus HentBonus(int bonusID)
+        {
+            var bonus = new List<Bonus>();
+            try
+            {
+                using (var sqlConnection = new SqlConnection(HentTilkoblingsdata()))
+                {
+                    sqlConnection.Open();
+                    const string bonusCommandText = @"SELECT * FROM Bonus WHERE [ID] = @BonusID";
+                    var bonusCommand = new SqlCommand(bonusCommandText, sqlConnection);
+                    bonusCommand.Parameters.Add("@BonusID", SqlDbType.VarChar);
+                    bonusCommand.Parameters["@BonusID"].Value = bonusID;
+
+                    using (var adapter = new SqlDataAdapter(bonusCommand))
+                    {
+                        var bonusTabell = new DataTable();
+                        adapter.Fill(bonusTabell);
+                        bonus.AddRange(from DataRow rad in bonusTabell.Rows select new Bonus(Convert.ToInt32(rad["ID"]), Convert.ToString(rad["Sporsmaal"]), Convert.ToString(rad["Svar"]), Convert.ToString(rad["Frist"]).FraDBStringTilDato(), Convert.ToBoolean(rad["ErFerdigspilt"])));
+                    }
+                    sqlConnection.Close();
+                    return bonus[0];
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Kunne ikke hente bonusspørsmål " + bonusID + " fra databasen", ex);
+            }
+        }
+
+        public static BonusTips LagreBonusTips(int bonusID, string tipperID, string svar)
+        {
+            var bonusTips = new List<BonusTips>();
+            try
+            {
+                using (var sqlConnection = new SqlConnection(HentTilkoblingsdata()))
+                {
+                    sqlConnection.Open();
+                    const string bonusCommandText = @"IF EXISTS (SELECT * FROM BonusTips WHERE BonusID = @bonusID AND TipperID = @tipperID) "
+                        + "UPDATE BonusTips "
+                        + "SET Svar = @svar WHERE BonusID = @bonusID AND TipperID = @tipperID "
+                        + "ELSE INSERT INTO BonusTips VALUES (@bonusID, @tipperID, @svar, 1, 0, 0) "
+                        + "SELECT * FROM BonusTips WHERE BonusID = @bonusID AND TipperID = @tipperID";
+                    var kampCommand = new SqlCommand(bonusCommandText, sqlConnection);
+                    kampCommand.Parameters.Add("@bonusID", SqlDbType.Int);
+                    kampCommand.Parameters["@bonusID"].Value = bonusID;
+                    kampCommand.Parameters.Add("@tipperID", SqlDbType.VarChar);
+                    kampCommand.Parameters["@tipperID"].Value = tipperID;
+                    kampCommand.Parameters.Add("@svar", SqlDbType.Text);
+                    kampCommand.Parameters["@svar"].Value = svar;
+
+                    using (var adapter = new SqlDataAdapter(kampCommand))
+                    {
+                        var bonusTipsTabell = new DataTable();
+                        adapter.Fill(bonusTipsTabell);
+                        bonusTips.AddRange(from DataRow rad in bonusTipsTabell.Rows select new BonusTips(Convert.ToInt32(rad["BonusID"]), Convert.ToString(rad["TipperID"]), Convert.ToString(rad["Svar"]), Convert.ToBoolean(rad["ErLevert"]), Convert.ToBoolean(rad["ErBeregnet"]), Convert.ToInt32(rad["Poeng"])));
+                    }
+                    sqlConnection.Close();
+                    return bonusTips[0];
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Kunne ikke lagre bonustips i databasen", ex);
             }
         }
     }

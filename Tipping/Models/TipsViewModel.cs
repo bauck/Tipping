@@ -8,6 +8,24 @@ namespace Tipping.Models
     public class TipsViewModel
     {
         public List<MergedKampOgTipsData> KampOgTips;
+        public List<MergedBonusOgTipsData> BonusOgTips;
+    }
+
+    public class MergedBonusOgTipsData
+    {
+        public int BonusID { get; set; }
+        public string BrukerID { get; set; }
+        public string Spørsmål { get; set; }
+        public string Svar { get; set; }
+        public DateTime Frist { get; set; }
+        public bool ErFerdigspilt { get; set; }
+        public bool ErLevert { get; set; }
+        public bool ErBeregnet { get; set; }
+        public int Poeng { get; set; }
+        public bool TipsfristUtløpt
+        {
+            get { return DateTime.Now > Frist; }
+        }
     }
 
     public class MergedKampOgTipsData

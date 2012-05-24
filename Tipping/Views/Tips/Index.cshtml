@@ -1,40 +1,95 @@
 ﻿@model Tipping.Models.TipsViewModel
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Mine tips";
 }
 <script src="@Url.Content("~/Scripts/Tips/Tips.js")"></script>
 <script src="@Url.Content("~/Scripts/Tipping/Tipping.js")"></script>
 <script type="text/javascript">
     $(function () {
-        settOppLagreTips();
         bindUrl("LagreTips_Tips", "@Url.Action("LagreTips", "Tips")");
+        bindUrl("LagreBonusTips_Tips", "@Url.Action("LagreBonusTips", "Tips")");
+        settOppLagreTips();
+        settOppLagreBonusTips();
     });
 </script>
+@section featured {
+<section class="featured">
+    <div class="content-wrapper">
+        <hgroup class="title">
+            <h1>@ViewBag.Title.</h1>
+        </hgroup>
+        <p>
+            Fyll ut dine tips i rubrikkene under og se poengene tikke inn.
+        </p>
+    </div>
+</section>
+}
+<h2>Bonusspørsmål</h2>
+<div class="main">
+    @foreach (var bonustips in @Model.BonusOgTips)
+    {
+            <div class="bonustips" data-bonusID="@bonustips.BonusID">
+            <div class="time">@bonustips.Frist.ToString("dd.MM.yyyy HH:mm")</div>
+            <div class="question">@bonustips.Spørsmål</div>
+            @if (bonustips.TipsfristUtløpt)
+            {
+                <div>@bonustips.Svar</div>
+            }
+            else
+            {
+                <input type="text" class="answer" value="@bonustips.Svar" />
+            }
+            <div class="status">
+                @if (bonustips.ErBeregnet)
+                {
+                    @Html.Raw(bonustips.Poeng + " p")
+                }
+            </div>
+        </div>
+    }
+</div>
 
 <h2>Tips</h2>
 
 <div class="main">
-    @foreach(var tips in @Model.KampOgTips)
+    @foreach (var tips in @Model.KampOgTips)
     {
-        <div class="tips" data-kampID="@tips.KampID">
-            <div>@tips.Avspark.ToString("dd.MM.yyyy HH:mm")</div>
-            <div>@tips.Hjemmelag</div>
-            @if(tips.ErLevert)
+            <div class="tips" data-kampID="@tips.KampID">
+            <div class="time">@tips.Avspark.ToString("dd.MM.yyyy HH:mm")</div>
+            <div class="hjemmelagnavn">@tips.Hjemmelag</div>
+            @if (tips.TipsfristUtløpt)
+            {
+                <div>@tips.MålHjemmelag</div>
+            }
+            else if (tips.ErLevert)
             {
                 <input type="number" class="hjemmelag" min="0" value="@tips.MålHjemmelag" />
-            } else
+            }
+            else
             {
                 <input type="number" class="hjemmelag" min="0" />
             }
             <div> - </div>
-            @if(tips.ErLevert)
+            @if (tips.TipsfristUtløpt)
+            {
+                <div>@tips.MålBortelag</div>
+            }
+            else if (tips.ErLevert)
             {
                 <input type="number" class="bortelag" min="0" value="@tips.MålBortelag" />
-            } else
+            }
+            else
             {
                 <input type="number" class="bortelag" min="0" />
-            }            <div>@tips.Bortelag</div>
+            }
+            <div class="bortelagnavn">@tips.Bortelag</div>
+            <div class="status">
+                @if (tips.ErBeregnet)
+                {
+                    @Html.Raw(tips.Poeng + " p")
+                }
+            </div>
         </div>
     }
 </div>
