@@ -24,8 +24,8 @@ function settOppLagreTips() {
     $(".tips input[type=number]").change(function () {
         var container = $(this).closest(".tips");
         var kampid = parseInt($(container).data("kampid"), 10);
-        var maalHjemmelag = parseInt($(container).find(".hjemmelag").val(), 10);
-        var maalBortelag = parseInt($(container).find(".bortelag").val(), 10);
+        var maalHjemmelag = parseInt($(container).find("input.hjemmelag").val(), 10);
+        var maalBortelag = parseInt($(container).find("input.bortelag").val(), 10);
         if (isNaN(maalHjemmelag) || isNaN(maalBortelag)) {
             return;
         } else {

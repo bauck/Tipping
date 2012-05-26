@@ -735,12 +735,20 @@ a.twitter
     }
 }
 
-.tips > *
+.tips > *, .bonustips > *
 {
     display: inline-block;
 }
 
-.tips > input[type=number]
+.bonustips > .question {
+    width: 200px;
+}
+
+.bonustips > .answer {
+    width: 100px;
+}
+
+.tips > .hjemmelag, .tips > .bortelag
 {
     width: 50px;
 }
