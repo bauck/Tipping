@@ -748,9 +748,15 @@ a.twitter
     width: 100px;
 }
 
-.tips > .hjemmelag, .tips > .bortelag
+.tips > input.hjemmelag, .tips > input.bortelag
 {
     width: 50px;
+    border: 2px inset;
+    text-align: center;
+}
+
+.tips div.hjemmelag, .tips div.bortelag {
+    width: 54px;
     text-align: center;
 }
 
