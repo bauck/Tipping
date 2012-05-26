@@ -15,7 +15,7 @@ namespace Tipping.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Regler()
         {
             ViewBag.Message = "Slik kaprer du poengene.";
 
