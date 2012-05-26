@@ -2,7 +2,7 @@
     $(".bonustips input.answer").change(function () {
         var container = $(this).closest(".bonustips");
         var bonusid = parseInt($(container).data("bonusid"), 10);
-        var svar = $(this).text();
+        var svar = $(this).val();
         if (svar === "") {
             return;
         } else {
