@@ -751,6 +751,7 @@ a.twitter
 .tips > .hjemmelag, .tips > .bortelag
 {
     width: 50px;
+    text-align: center;
 }
 
 .tips .hjemmelagnavn, .tips .bortelagnavn
