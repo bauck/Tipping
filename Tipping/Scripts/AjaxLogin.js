@@ -80,7 +80,7 @@
                         modal: true,
                         resizable: true,
                         draggable: true,
-                        width: link.data('dialog-width') || 600,
+                        width: link.data('dialog-width') || "80%",
                         beforeClose: function () { resetForm($(this).find('form')); }
                     })
                     .find('form') // Attach logic on forms
