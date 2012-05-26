@@ -774,3 +774,17 @@ a.twitter
     width: 150px;
 }
 
+.poengOversikt {
+    padding: 5px;
+    font-size: 110%;
+}
+
+.poengOversikt .navn {
+    width: 175px;
+    display: inline-block;
+}
+.poengOversikt .poeng {
+    width: 75px;
+    text-align: right;
+    display: inline-block;
+}

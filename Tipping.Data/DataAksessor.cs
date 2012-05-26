@@ -85,7 +85,7 @@ namespace Tipping.Data
             }
             catch (Exception ex)
             {
-                throw new Exception("Kunne ikke hente tips fra databasen", ex);
+                throw new Exception("Kunne ikke hente tips fra databasen for bruker " + brukernavn, ex);
             }
             return tips;
         }
@@ -279,6 +279,33 @@ namespace Tipping.Data
             {
                 throw new Exception("Kunne ikke lagre bonustips i databasen", ex);
             }
+        }
+
+        public static List<Tips> HentAlleTips()
+        {
+            var tips = new List<Tips>();
+            try
+            {
+                using (var sqlConnection = new SqlConnection(HentTilkoblingsdata()))
+                {
+                    sqlConnection.Open();
+                    const string tipsCommandText = @"SELECT * FROM Tips";
+                    var tipsCommand = new SqlCommand(tipsCommandText, sqlConnection);
+
+                    using (var adapter = new SqlDataAdapter(tipsCommand))
+                    {
+                        var tipsTabell = new DataTable();
+                        adapter.Fill(tipsTabell);
+                        tips.AddRange(from DataRow rad in tipsTabell.Rows select new Tips(Convert.ToInt32(rad["KampID"]), Convert.ToString(rad["TipperID"]), Convert.ToInt32(rad["MaalHjemmelag"]), Convert.ToInt32(rad["MaalBortelag"]), Convert.ToBoolean(rad["ErLevert"]), Convert.ToBoolean(rad["ErBeregnet"]), Convert.ToInt32(rad["Poeng"])));
+                    }
+                    sqlConnection.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Kunne ikke hente tips fra databasen for alle brukere ", ex);
+            }
+            return tips;
         }
     }
 }

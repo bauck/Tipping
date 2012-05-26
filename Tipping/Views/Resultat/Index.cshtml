@@ -1,0 +1,44 @@
+﻿@model Tipping.Models.ResultatViewModel
+@{
+    ViewBag.Title = "Resultatoversikt";
+}
+@section featured {
+<section class="featured">
+    <div class="content-wrapper">
+        <hgroup class="title">
+            <h1>@ViewBag.Title.</h1>
+        </hgroup>
+        <p>
+            Hvem leder an i poengfangsten?
+        </p>
+    </div>
+</section>
+}
+<h2>Totalsum poeng:</h2>
+<div class="poengOversikt">
+    @foreach(var deltaker in Model.TotalPoengsum)
+    {
+        <div>
+            <span class="navn">@deltaker.Brukernavn</span><span class="poeng">@deltaker.Score p</span>
+        </div>
+    }
+</div>
+
+<h2>Antall kamper med 4 poeng:</h2>
+<div class="poengOversikt">
+    @foreach(var deltaker in Model.KamperMedFirePoeng)
+    {
+        <div>
+            <span class="navn">@deltaker.Brukernavn</span><span class="poeng">@deltaker.Score kamper</span>
+        </div>
+    }
+</div>
+<h2>Antall kamper med poeng:</h2>
+<div class="poengOversikt">
+    @foreach(var deltaker in Model.KamperMedPoeng)
+    {
+        <div>
+            <span class="navn">@deltaker.Brukernavn</span><span class="poeng">@deltaker.Score kamper</span>
+        </div>
+    }
+</div>
