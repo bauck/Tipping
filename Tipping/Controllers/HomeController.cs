@@ -22,11 +22,5 @@ namespace Tipping.Controllers
             return View();
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your quintessential contact page.";
-
-            return View();
-        }
     }
 }

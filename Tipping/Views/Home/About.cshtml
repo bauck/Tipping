@@ -1,11 +1,16 @@
 ﻿@{
     ViewBag.Title = "Regler";
 }
-
-<hgroup class="title">
-    <h1>@ViewBag.Title.</h1>
-    <h2>@ViewBag.Message</h2>
-</hgroup>
+@section featured {
+<section class="featured">
+    <div class="content-wrapper">
+        <hgroup class="title">
+            <h1>@ViewBag.Title.</h1>
+            <h2>@ViewBag.Message</h2>
+        </hgroup>
+    </div>
+</section>
+}
 
 <article>
     <p>
@@ -34,17 +39,5 @@
             <li>Feil tips av vinner og toppscorer i EM gir 0 poeng</li>
         </ul>
         
-    </p></article>
-
-<aside>
-    <h3>Aside Title</h3>
-    <p>
-        Fusce facilisis ullamcorper consequat. Vestibulum non sapien lectus. Nam 
-        mi augue, posuere at tempus vel, dignissim vitae nulla.
     </p>
-    <ul>
-        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-        <li>@Html.ActionLink("About", "About", "Home")</li>
-        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-    </ul>
-</aside>
+</article>
