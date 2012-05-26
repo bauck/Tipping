@@ -2,6 +2,7 @@
 bin
 obj
 _Resharper.*
+_ReSharper.*
 
 # mstest test results
 TestResults
