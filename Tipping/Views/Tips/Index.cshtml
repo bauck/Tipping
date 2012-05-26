@@ -36,7 +36,7 @@
             <div class="question">@bonustips.Spørsmål</div>
             @if (bonustips.TipsfristUtløpt)
             {
-                <div>@bonustips.Svar</div>
+                <div class="answer">@bonustips.Svar</div>
             }
             else
             {
@@ -62,7 +62,7 @@
             <div class="hjemmelagnavn">@tips.Hjemmelag</div>
             @if (tips.TipsfristUtløpt)
             {
-                <div>@tips.MålHjemmelag</div>
+                <div class="hjemmelag">@tips.MålHjemmelag</div>
             }
             else if (tips.ErLevert)
             {
@@ -75,7 +75,7 @@
             <div> - </div>
             @if (tips.TipsfristUtløpt)
             {
-                <div>@tips.MålBortelag</div>
+                <div class="bortelag">@tips.MålBortelag</div>
             }
             else if (tips.ErLevert)
             {
