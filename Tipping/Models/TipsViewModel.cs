@@ -24,8 +24,9 @@ namespace Tipping.Models
         public int Poeng { get; set; }
         public bool TipsfristUtløpt
         {
-            get { return DateTime.Now > Frist; }
+            get { return DateTimeUtils.CETNå() >= Frist; }
         }
+
     }
 
     public class MergedKampOgTipsData
@@ -43,7 +44,14 @@ namespace Tipping.Models
         public int Poeng { get; set; }
         public bool TipsfristUtløpt
         {
-            get { return DateTime.Now > Avspark; }
+            get { return DateTimeUtils.CETNå() >= Avspark; }
+        }
+    }
+    public static class DateTimeUtils
+    {
+        public static DateTime CETNå()
+        {
+            return TimeZoneInfo.ConvertTime(DateTime.Now, TimeZoneInfo.FindSystemTimeZoneById("Central Europe Standard Time"));
         }
     }
 }
