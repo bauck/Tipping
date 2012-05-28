@@ -2,8 +2,6 @@
   <RecentFiles>
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Account/f:Register.cshtml" caret="1624" fromTop="36" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Account/f:Login.cshtml" caret="1364" fromTop="29" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/f:Web.config" caret="2266" fromTop="14" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Home/f:About.cshtml" caret="1140" fromTop="23" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Controllers/f:HomeController.cs" caret="617" fromTop="13" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/f:_ViewStart.cshtml" caret="0" fromTop="0" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Shared/f:_LoginPartial.cshtml" caret="0" fromTop="0" />
@@ -19,7 +17,6 @@
     <File id="C04630B5-402E-4D28-A153-A21C92E0F5A1/f:Bonus.cs" caret="411" fromTop="15" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Home/f:Index.cshtml" caret="49" fromTop="4" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Shared/f:_Layout.cshtml" caret="1335" fromTop="24" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Content/f:Site.css" caret="11310" fromTop="6" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Models/f:TipsViewModel.cs" caret="475" fromTop="5" />
     <File id="36DEEBBD-96B5-44EA-AEF9-72ACAD9A91D6/f:DataAksessor.cs" caret="14237" fromTop="33" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Controllers/f:TipsController.cs" caret="4421" fromTop="26" />
@@ -30,11 +27,11 @@
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Scripts/d:Tipping/f:Tipping.js" caret="0" fromTop="0" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Account/f:ForgotPassword.cshtml" caret="381" fromTop="11" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Scripts/d:Account/f:Password.js" caret="731" fromTop="21" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/f:Web.config" caret="1902" fromTop="19" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Home/f:Regler.cshtml" caret="506" fromTop="18" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Content/f:Site.css" caret="11679" fromTop="30" />
   </RecentFiles>
   <RecentEdits>
-    <File id="36DEEBBD-96B5-44EA-AEF9-72ACAD9A91D6/f:DataAksessor.cs" caret="10425" fromTop="25" />
-    <File id="C04630B5-402E-4D28-A153-A21C92E0F5A1/f:BonusTips.cs" caret="473" fromTop="16" />
-    <File id="C04630B5-402E-4D28-A153-A21C92E0F5A1/f:BonusTips.cs" caret="636" fromTop="22" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Controllers/f:TipsController.cs" caret="2004" fromTop="19" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Tips/f:Index.cshtml" caret="1645" fromTop="14" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Tips/f:Index.cshtml" caret="1578" fromTop="29" />
@@ -62,5 +59,8 @@
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Scripts/d:Tips/f:Tips.js" caret="815" fromTop="16" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Scripts/d:Tips/f:Tips.js" caret="1884" fromTop="40" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Scripts/d:Account/f:Password.js" caret="61" fromTop="2" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Home/f:Regler.cshtml" caret="506" fromTop="18" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Content/f:Site.css" caret="11588" fromTop="21" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Content/f:Site.css" caret="11679" fromTop="30" />
   </RecentEdits>
 </RecentFiles>

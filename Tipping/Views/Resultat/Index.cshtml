@@ -41,4 +41,20 @@
             <span class="navn">@deltaker.Brukernavn</span><span class="poeng">@deltaker.Score kamper</span>
         </div>
     }
+</div><h2>Kamp med flest poeng utdelt:</h2>
+<div class="poengOversikt">
+    @foreach (var kamp in Model.KampMedFlestPoeng)
+    {
+        <div>
+            <span class="navn">@kamp.Lag</span><span class="poeng">@kamp.Score poeng</span>
+        </div>
+    }
+</div><h2>Kamp med færrest poeng utdelt:</h2>
+<div class="poengOversikt">
+    @foreach (var kamp in Model.KampMedFærrestPoeng)
+    {
+        <div>
+            <span class="navn">@kamp.Lag</span><span class="poeng">@kamp.Score poeng</span>
+        </div>
+    }
 </div>
