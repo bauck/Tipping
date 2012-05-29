@@ -19,7 +19,7 @@ namespace Tipping.Controllers
             viewModel.TotalPoengsum = perBruker.Select(bruker => new BrukerMedScore {Brukernavn = bruker.Key, Score = bruker.Sum(en => en.Poeng)}).OrderByDescending(bruker => bruker.Score).ToList();
             viewModel.KamperMedFirePoeng = perBruker.Select(bruker => new BrukerMedScore { Brukernavn = bruker.Key, Score = bruker.Count(en => en.Poeng == 4) }).OrderByDescending(bruker => bruker.Score).ToList();
             viewModel.KamperMedPoeng = perBruker.Select(bruker => new BrukerMedScore { Brukernavn = bruker.Key, Score = bruker.Count(en => en.Poeng > 0) }).OrderByDescending(bruker => bruker.Score).ToList();
-            var perKamp = tips.Where(tipset => tipset.ErBeregnet).GroupBy(ettTips => ettTips.KampID);
+            var perKamp = tips.GroupBy(ettTips => ettTips.KampID);
             var kamperMedPoeng = perKamp.Select(kamp => new KeyValuePair<int, int> (kamp.Key, kamp.Sum(en => en.Poeng))).OrderByDescending(en => en.Value);
             var maxScore = kamperMedPoeng.Max(k => k.Value);
             var minScore = kamperMedPoeng.Min(k => k.Value);
