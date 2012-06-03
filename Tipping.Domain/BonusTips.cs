@@ -10,7 +10,7 @@ namespace Tipping.Domain
         public BonusTips(int bonusId, string brukernavn, string svar, bool erLevert, bool erBeregnet, int poeng)
         {
             BonusID = bonusId;
-            BrukerID = brukernavn;
+            TipperID = brukernavn;
             Svar = svar;
             ErLevert = erLevert;
             ErBeregnet = erBeregnet;
@@ -18,7 +18,7 @@ namespace Tipping.Domain
         }
 
         public int BonusID { get; set; }
-        public string BrukerID { get; set; }
+        public string TipperID { get; set; }
         public string Svar { get; set; }
         public int Poeng { get; set; }
         public Boolean ErBeregnet { get; set; }

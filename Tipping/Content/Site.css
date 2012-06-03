@@ -777,6 +777,8 @@ a.twitter
 .poengOversikt {
     padding: 5px;
     font-size: 110%;
+    float: left;
+    width: 66%;
 }
 
 .poengOversikt .navn {
@@ -787,4 +789,8 @@ a.twitter
     width: 75px;
     text-align: right;
     display: inline-block;
+}
+.right {
+    float: right;
+    width: 33%;
 }

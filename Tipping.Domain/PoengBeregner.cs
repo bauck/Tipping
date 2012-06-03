@@ -62,5 +62,17 @@ namespace Tipping.Domain
         {
             return kamp.MålHjemmelag == tips.MålHjemmelag && kamp.MålBortelag == tips.MålBortelag;
         }
+
+        public static void BerengBonusPoeng(Bonus bonus, BonusTips tips)
+        {
+            if (bonus.Svar == tips.Svar)
+            {
+                tips.Poeng = 10;
+            } else
+            {
+                tips.Poeng = 0;
+            }
+            tips.ErBeregnet = true;
+        }
     }
 }

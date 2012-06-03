@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Tipping.Domain;
 
 namespace Tipping.Models
 {
@@ -9,12 +10,15 @@ namespace Tipping.Models
         public IEnumerable<BrukerMedScore> KamperMedPoeng { get; set; }
         public IEnumerable<KampMedScore> KampMedFlestPoeng { get; set; }
         public IEnumerable<KampMedScore> KampMedFærrestPoeng { get; set; }
+
+        public List<Kamp> AlleKamper { get; set; }
     }
 
     public class KampMedScore
     {
         public string Lag { get; set; }
         public int Score { get; set; }
+        public int ID { get; set; }
     }
 
     public class BrukerMedScore

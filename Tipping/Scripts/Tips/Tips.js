@@ -43,3 +43,49 @@ function settOppLagreTips() {
         }
     });
 }
+
+function settOppLagreResultat() {
+    $(".tips input[type=number]").change(function () {
+        var container = $(this).closest(".tips");
+        var kampid = parseInt($(container).data("kampid"), 10);
+        var maalHjemmelag = parseInt($(container).find("input.hjemmelag").val(), 10);
+        var maalBortelag = parseInt($(container).find("input.bortelag").val(), 10);
+        if (isNaN(maalHjemmelag) || isNaN(maalBortelag)) {
+            return;
+        } else {
+            $(container).find(".status").show().text("Lagrer...");
+            $.ajax(getUrl("LagreResultat_Admin"), {
+                type: "POST",
+                data: { kampID: kampid, målHjemmelag: maalHjemmelag, målBortelag: maalBortelag },
+                success: function (returdata) {
+                    $(container).find(".status").text("Lagret!").fadeOut(3000);
+                },
+                error: function () {
+                    $(container).find(".status").text("Noe gikk feil under lagring").css("color", "red");
+                }
+            });
+        }
+    });
+}
+function settOppLagreBonusResultat() {
+    $(".bonustips input.answer").change(function () {
+        var container = $(this).closest(".bonustips");
+        var bonusid = parseInt($(container).data("bonusid"), 10);
+        var svar = $(this).val();
+        if (svar === "") {
+            return;
+        } else {
+            $(container).find(".status").show().text("Lagrer...");
+            $.ajax(getUrl("LagreBonusResultat_Admin"), {
+                type: "POST",
+                data: { bonusID: bonusid, svar: svar },
+                success: function (returdata) {
+                    $(container).find(".status").text("Lagret!").fadeOut(3000);
+                },
+                error: function () {
+                    $(container).find(".status").text("Noe gikk feil under lagring").css("color", "red");
+                }
+            });
+        }
+    });
+}

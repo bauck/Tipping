@@ -1,0 +1,27 @@
+﻿@model Tipping.Models.ResultatKampViewModel
+@{
+    ViewBag.Title = "Resultat for kamp: " + @Model.Kamp.Hjemmelag + "-" + @Model.Kamp.Bortelag;
+}
+@section featured {
+<section class="featured">
+    <div class="content-wrapper">
+        <hgroup class="title">
+            <h1>@ViewBag.Title.</h1>
+        </hgroup>
+    </div>
+</section>
+}
+<h2>Poeng for kamp:</h2>
+<div class="poengOversikt">
+    @foreach(var tips in Model.KampTips)
+    {
+        <div>
+            <span class="navn">@tips.TipperID</span><span class="poeng">@tips.Poeng p</span>
+            @if (Model.VisTips)
+            {
+            <span style="margin-left: 30px;" class="tips">(Tips: @tips.MålHjemmelag - @tips.MålBortelag)</span>
+            }
+        </div>
+    }
+</div>
+

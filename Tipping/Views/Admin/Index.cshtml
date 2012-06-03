@@ -2,16 +2,16 @@
 @model Tipping.Models.TipsViewModel
 
 @{
-    ViewBag.Title = "Mine tips";
+    ViewBag.Title = "Admin";
 }
 <script src="@Url.Content("~/Scripts/Tips/Tips.js")"></script>
 <script src="@Url.Content("~/Scripts/Tipping/Tipping.js")"></script>
 <script type="text/javascript">
     $(function () {
-        bindUrl("LagreTips_Tips", "@Url.Action("LagreTips", "Tips")");
-        bindUrl("LagreBonusTips_Tips", "@Url.Action("LagreBonusTips", "Tips")");
-        settOppLagreTips();
-        settOppLagreBonusTips();
+        bindUrl("LagreResultat_Admin", "@Url.Action("LagreResultat", "Admin")");
+        bindUrl("LagreBonusResultat_Admin", "@Url.Action("LagreBonusResultat", "Admin")");
+        settOppLagreResultat();
+        settOppLagreBonusResultat();
     });
 </script>
 @section featured {
@@ -20,9 +20,6 @@
         <hgroup class="title">
             <h1>@ViewBag.Title.</h1>
         </hgroup>
-        <p>
-            Fyll ut dine tips i rubrikkene under og se poengene tikke inn.
-        </p>
     </div>
 </section>
 }
@@ -33,19 +30,8 @@
             <div class="bonustips" data-bonusID="@bonustips.BonusID">
             <div class="time">@bonustips.Frist.ToString("dd.MM.yyyy HH:mm")</div>
             <div class="question">@bonustips.Spørsmål</div>
-            @if (bonustips.TipsfristUtløpt)
-            {
-                <div class="answer">@bonustips.Svar</div>
-            }
-            else
-            {
-                <input type="text" class="answer" value="@bonustips.Svar" />
-            }
+            <input type="text" class="answer" value="@bonustips.Svar" />
             <div class="status">
-                @if (bonustips.ErBeregnet)
-                {
-                    @Html.Raw(bonustips.Poeng + " p")
-                }
             </div>
         </div>
     }
@@ -59,11 +45,7 @@
             <div class="tips" data-kampID="@tips.KampID">
             <div class="time">@tips.Avspark.ToString("dd.MM.yyyy HH:mm")</div>
             <div class="hjemmelagnavn">@tips.Hjemmelag</div>
-            @if (tips.TipsfristUtløpt)
-            {
-                <div class="hjemmelag">@tips.MålHjemmelag</div>
-            }
-            else if (tips.ErLevert)
+            @if (tips.ErFerdigspilt)
             {
                 <input type="number" class="hjemmelag" min="0" value="@tips.MålHjemmelag" />
             }
@@ -72,11 +54,7 @@
                 <input type="number" class="hjemmelag" min="0" />
             }
             <div> - </div>
-            @if (tips.TipsfristUtløpt)
-            {
-                <div class="bortelag">@tips.MålBortelag</div>
-            }
-            else if (tips.ErLevert)
+            @if (tips.ErFerdigspilt)
             {
                 <input type="number" class="bortelag" min="0" value="@tips.MålBortelag" />
             }
@@ -86,10 +64,6 @@
             }
             <div class="bortelagnavn">@tips.Bortelag</div>
             <div class="status">
-                @if (tips.ErBeregnet)
-                {
-                    @Html.Raw(tips.Poeng + " p")
-                }
             </div>
         </div>
     }

@@ -14,47 +14,59 @@
     </div>
 </section>
 }
-<h2>Totalsum poeng:</h2>
+<div class ="right">
+    <h2>Tips og resultat per kamp:</h2>
+    @foreach (var kamp in Model.AlleKamper)
+    {
+        <div>
+            <span class="navn">@Html.ActionLink(kamp.Hjemmelag + " - " + kamp.Bortelag, "Kamp", new {id = kamp.ID}) </span>
+        </div>
+    }
+</div>
 <div class="poengOversikt">
+<h2>Totalsum poeng:</h2>
     @foreach(var deltaker in Model.TotalPoengsum)
     {
         <div>
-            <span class="navn">@deltaker.Brukernavn</span><span class="poeng">@deltaker.Score p</span>
+            <span class="navn">@Html.ActionLink(@deltaker.Brukernavn,"Bruker", new{id = @deltaker.Brukernavn})</span><span class="poeng">@deltaker.Score p</span>
         </div>
     }
 </div>
 
-<h2>Antall kamper med 4 poeng:</h2>
 <div class="poengOversikt">
+<h2>Antall kamper med 4 poeng:</h2>
     @foreach(var deltaker in Model.KamperMedFirePoeng)
     {
         <div>
-            <span class="navn">@deltaker.Brukernavn</span><span class="poeng">@deltaker.Score kamper</span>
+            <span class="navn">@Html.ActionLink(@deltaker.Brukernavn, "Bruker", new { id = @deltaker.Brukernavn })</span><span class="poeng">@deltaker.Score kamper</span>
         </div>
     }
 </div>
-<h2>Antall kamper med poeng:</h2>
 <div class="poengOversikt">
+    <h2>Antall kamper med poeng:</h2>
     @foreach(var deltaker in Model.KamperMedPoeng)
     {
         <div>
-            <span class="navn">@deltaker.Brukernavn</span><span class="poeng">@deltaker.Score kamper</span>
-        </div>
-    }
-</div><h2>Kamp med flest poeng utdelt:</h2>
-<div class="poengOversikt">
-    @foreach (var kamp in Model.KampMedFlestPoeng)
-    {
-        <div>
-            <span class="navn">@kamp.Lag</span><span class="poeng">@kamp.Score poeng</span>
-        </div>
-    }
-</div><h2>Kamp med færrest poeng utdelt:</h2>
-<div class="poengOversikt">
-    @foreach (var kamp in Model.KampMedFærrestPoeng)
-    {
-        <div>
-            <span class="navn">@kamp.Lag</span><span class="poeng">@kamp.Score poeng</span>
+            <span class="navn">@Html.ActionLink(@deltaker.Brukernavn, "Bruker", new { id = @deltaker.Brukernavn })</span><span class="poeng">@deltaker.Score kamper</span>
         </div>
     }
 </div>
+<div class="poengOversikt">
+    <h2>Kamp med flest poeng utdelt:</h2>
+    @foreach (var kamp in Model.KampMedFlestPoeng)
+    {
+        <div>
+            <span class="navn">@Html.ActionLink(kamp.Lag, "Kamp", new {id = kamp.ID})</span><span class="poeng">@kamp.Score poeng</span>
+        </div>
+    }
+</div>
+<div class="poengOversikt">
+<h2>Kamp med færrest poeng utdelt:</h2>
+    @foreach (var kamp in Model.KampMedFærrestPoeng)
+    {
+        <div>
+            <span class="navn">@Html.ActionLink(kamp.Lag, "Kamp", new {id = kamp.ID})</span><span class="poeng">@kamp.Score poeng</span>
+        </div>
+    }
+</div>
+

@@ -9,6 +9,8 @@ namespace Tipping.Models
     {
         public List<MergedKampOgTipsData> KampOgTips;
         public List<MergedBonusOgTipsData> BonusOgTips;
+
+        public string Brukernavn { get; set; }
     }
 
     public class MergedBonusOgTipsData
