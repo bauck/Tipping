@@ -12,6 +12,8 @@ namespace Tipping.Models
         public IEnumerable<KampMedScore> KampMedFærrestPoeng { get; set; }
 
         public List<Kamp> AlleKamper { get; set; }
+
+        public List<Bonus> AlleBonusspørsmål { get; set; }
     }
 
     public class KampMedScore

@@ -16,7 +16,6 @@
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Scripts/d:Tips/f:Tips.js" caret="3476" fromTop="47" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Scripts/d:Tipping/f:Tipping.js" caret="0" fromTop="0" />
     <File id="C04630B5-402E-4D28-A153-A21C92E0F5A1/f:PoengBeregner.cs" caret="2489" fromTop="32" />
-    <File id="36DEEBBD-96B5-44EA-AEF9-72ACAD9A91D6/f:DataAksessor.cs" caret="26234" fromTop="18" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Controllers/f:AdminController.cs" caret="3489" fromTop="19" />
     <File id="C04630B5-402E-4D28-A153-A21C92E0F5A1/f:Kamp.cs" caret="76" fromTop="6" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/f:Global.asax.cs" caret="1161" fromTop="22" />
@@ -29,7 +28,8 @@
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Bruker.cshtml" caret="780" fromTop="28" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Models/f:ResultatViewModel.cs" caret="590" fromTop="16" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Controllers/f:ResultatController.cs" caret="2412" fromTop="16" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Index.cshtml" caret="2207" fromTop="20" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Index.cshtml" caret="0" fromTop="0" />
+    <File id="36DEEBBD-96B5-44EA-AEF9-72ACAD9A91D6/f:DataAksessor.cs" caret="15506" fromTop="28" />
   </RecentFiles>
   <RecentEdits>
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Models/f:ResultatViewModel.cs" caret="554" fromTop="13" />

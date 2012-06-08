@@ -131,6 +131,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\ResultatBonusViewModel.cs" />
     <Compile Include="Models\ResultatBrukerViewModel.cs" />
     <Compile Include="Models\ResultatKampViewModel.cs" />
     <Compile Include="Models\ResultatViewModel.cs" />
@@ -259,6 +260,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Resultat\Bruker.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Resultat\Bonus.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

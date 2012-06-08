@@ -1,0 +1,27 @@
+﻿@model Tipping.Models.ResultatBonusViewModel
+@{
+    ViewBag.Title = "Resultat for bonusspørsmål: " + @Model.Bonus.Spørsmål;
+}
+@section featured {
+<section class="featured">
+    <div class="content-wrapper">
+        <hgroup class="title">
+            <h1>@ViewBag.Title.</h1>
+        </hgroup>
+    </div>
+</section>
+}
+<h2>Poeng for bonusspørsmål:</h2>
+<div class="poengOversikt">
+    @foreach(var tips in Model.BonusTips)
+    {
+        <div>
+            <span class="navn">@tips.TipperID</span><span class="poeng">@tips.Poeng p</span>
+            @if (Model.VisTips)
+            {
+            <span style="margin-left: 30px;" class="tips">(Tips: @tips.Svar)</span>
+            }
+        </div>
+    }
+</div>
+
