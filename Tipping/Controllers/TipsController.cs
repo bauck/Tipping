@@ -69,7 +69,7 @@ namespace Tipping.Controllers
             if (!Request.IsAuthenticated)
                 throw new Exception("Bruker er ikke logget inn.");
             var kamp = DataAksessor.HentKamp(kampID);
-            if (kamp.Avspark < DateTime.Now)
+            if (kamp.Avspark < DateTimeUtils.CETNå())
                 throw new Exception("Kamp har allerede startet.");
 
             var lagretTips = DataAksessor.LagreTips(kampID, User.Identity.Name, målHjemmelag, målBortelag);
@@ -82,7 +82,7 @@ namespace Tipping.Controllers
             if (!Request.IsAuthenticated)
                 throw new Exception("Bruker er ikke logget inn.");
             var bonus = DataAksessor.HentBonus(bonusID);
-            if (bonus.Frist < DateTime.Now)
+            if (bonus.Frist < DateTimeUtils.CETNå())
                 throw new Exception("Fristen for spørsmål er passert.");
 
             var lagretTips = DataAksessor.LagreBonusTips(bonusID, User.Identity.Name, svar);
