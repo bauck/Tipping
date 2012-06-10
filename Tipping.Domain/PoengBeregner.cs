@@ -29,6 +29,10 @@ namespace Tipping.Domain
             {
                 tips.Poeng = 1;
                 tips.ErBeregnet = true;
+            } else
+            {
+                tips.Poeng = 0;
+                tips.ErBeregnet = true;
             }
 
         }
