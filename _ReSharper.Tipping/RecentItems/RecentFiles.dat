@@ -1,14 +1,10 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Home/f:Regler.cshtml" caret="0" fromTop="0" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/f:Web.config" caret="1902" fromTop="19" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Scripts/d:Account/f:Password.js" caret="0" fromTop="0" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Account/f:ForgotPassword.cshtml" caret="0" fromTop="0" />
     <File id="C04630B5-402E-4D28-A153-A21C92E0F5A1/f:BonusTips.cs" caret="407" fromTop="14" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Account/f:Register.cshtml" caret="0" fromTop="0" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Account/f:Login.cshtml" caret="0" fromTop="0" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Controllers/f:HomeController.cs" caret="515" fromTop="13" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/f:_ViewStart.cshtml" caret="0" fromTop="0" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Controllers/f:KamperController.cs" caret="0" fromTop="0" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Kamper/f:Index.cshtml" caret="0" fromTop="0" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Tips/f:Index.cshtml" caret="831" fromTop="28" />
@@ -20,47 +16,51 @@
     <File id="C04630B5-402E-4D28-A153-A21C92E0F5A1/f:Kamp.cs" caret="76" fromTop="6" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/f:Global.asax.cs" caret="1161" fromTop="22" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Content/f:Site.css" caret="11779" fromTop="3" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Models/f:ResultatKampViewModel.cs" caret="294" fromTop="15" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Kamp.cshtml" caret="322" fromTop="10" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Models/f:ResultatBrukerViewModel.cs" caret="279" fromTop="11" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Controllers/f:TipsController.cs" caret="477" fromTop="20" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Models/f:TipsViewModel.cs" caret="305" fromTop="12" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Bruker.cshtml" caret="780" fromTop="28" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Models/f:ResultatViewModel.cs" caret="590" fromTop="16" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Controllers/f:ResultatController.cs" caret="2412" fromTop="16" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Index.cshtml" caret="0" fromTop="0" />
-    <File id="36DEEBBD-96B5-44EA-AEF9-72ACAD9A91D6/f:DataAksessor.cs" caret="15506" fromTop="28" />
+    <File id="36DEEBBD-96B5-44EA-AEF9-72ACAD9A91D6/f:DataAksessor.cs" caret="15506" fromTop="305" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Models/f:ResultatBonusViewModel.cs" caret="291" fromTop="12" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Models/f:ResultatViewModel.cs" caret="930" fromTop="17" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Models/f:ResultatKampViewModel.cs" caret="294" fromTop="15" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Index.cshtml" caret="643" fromTop="9" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Controllers/f:ResultatController.cs" caret="3861" fromTop="11" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Bonus.cshtml" caret="734" fromTop="27" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/f:_ViewStart.cshtml" caret="0" fromTop="0" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Controllers/f:TipsController.cs" caret="4311" fromTop="84" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Shared/f:_Layout.cshtml" caret="673" fromTop="9" />
   </RecentFiles>
   <RecentEdits>
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Models/f:ResultatViewModel.cs" caret="554" fromTop="13" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Index.cshtml" caret="2292" fromTop="28" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Content/f:Site.css" caret="11900" fromTop="11" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Content/f:Site.css" caret="12002" fromTop="17" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Content/f:Site.css" caret="11779" fromTop="3" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Index.cshtml" caret="2292" fromTop="20" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Index.cshtml" caret="360" fromTop="16" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Index.cshtml" caret="646" fromTop="25" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Kamp.cshtml" caret="768" fromTop="27" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Models/f:ResultatBrukerViewModel.cs" caret="349" fromTop="15" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Bruker.cshtml" caret="1175" fromTop="30" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Kamp.cshtml" caret="322" fromTop="10" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Models/f:ResultatBrukerViewModel.cs" caret="279" fromTop="11" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Controllers/f:ResultatController.cs" caret="5676" fromTop="35" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Controllers/f:ResultatController.cs" caret="5669" fromTop="35" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Bruker.cshtml" caret="35" fromTop="0" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Controllers/f:ResultatController.cs" caret="3641" fromTop="12" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Controllers/f:ResultatController.cs" caret="3805" fromTop="12" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Models/f:TipsViewModel.cs" caret="295" fromTop="12" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Bruker.cshtml" caret="910" fromTop="18" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Bruker.cshtml" caret="669" fromTop="21" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Bruker.cshtml" caret="374" fromTop="15" />
     <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Bruker.cshtml" caret="780" fromTop="28" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Index.cshtml" caret="884" fromTop="28" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Index.cshtml" caret="1228" fromTop="11" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Index.cshtml" caret="1573" fromTop="20" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Models/f:ResultatViewModel.cs" caret="719" fromTop="20" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Controllers/f:ResultatController.cs" caret="2829" fromTop="18" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Index.cshtml" caret="1892" fromTop="11" />
-    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Index.cshtml" caret="2207" fromTop="20" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Models/f:ResultatViewModel.cs" caret="781" fromTop="20" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Controllers/f:ResultatController.cs" caret="1360" fromTop="17" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Index.cshtml" caret="2955" fromTop="28" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Index.cshtml" caret="1480" fromTop="30" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Index.cshtml" caret="1847" fromTop="34" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Index.cshtml" caret="2218" fromTop="33" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Index.cshtml" caret="2559" fromTop="34" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Index.cshtml" caret="1118" fromTop="30" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Index.cshtml" caret="2783" fromTop="17" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Index.cshtml" caret="680" fromTop="18" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Controllers/f:ResultatController.cs" caret="539" fromTop="10" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Controllers/f:ResultatController.cs" caret="3027" fromTop="15" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Models/f:ResultatViewModel.cs" caret="587" fromTop="15" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Controllers/f:ResultatController.cs" caret="3081" fromTop="10" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Controllers/f:ResultatController.cs" caret="3938" fromTop="17" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Controllers/f:ResultatController.cs" caret="3870" fromTop="11" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Models/f:ResultatBonusViewModel.cs" caret="303" fromTop="15" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Models/f:ResultatBonusViewModel.cs" caret="290" fromTop="12" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Index.cshtml" caret="643" fromTop="9" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Bonus.cshtml" caret="676" fromTop="12" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Bonus.cshtml" caret="97" fromTop="2" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Resultat/f:Bonus.cshtml" caret="357" fromTop="13" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Controllers/f:TipsController.cs" caret="3730" fromTop="9" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Controllers/f:TipsController.cs" caret="4311" fromTop="14" />
+    <File id="C0136397-0280-401C-A14E-0EA7D27C9CED/d:Views/d:Shared/f:_Layout.cshtml" caret="673" fromTop="9" />
   </RecentEdits>
 </RecentFiles>

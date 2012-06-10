@@ -69,7 +69,7 @@ namespace Tipping.Controllers
         public ActionResult Bruker(string id)
         {
             var kamper = DataAksessor.HentAlleKamper();
-            var tips = DataAksessor.HentAlleTipsForBruker(User.Identity.Name);
+            var tips = DataAksessor.HentAlleTipsForBruker(id);
             var tipsmodel = new TipsViewModel {Brukernavn = id, KampOgTips = new List<MergedKampOgTipsData>(), BonusOgTips = new List<MergedBonusOgTipsData>() };
 
             foreach (var kamp in kamper)
@@ -91,7 +91,7 @@ namespace Tipping.Controllers
                 });
             }
             var bonus = DataAksessor.HentAlleBonus();
-            var bonusTips = DataAksessor.HentAlleBonusTipsForBruker(User.Identity.Name);
+            var bonusTips = DataAksessor.HentAlleBonusTipsForBruker(id);
 
             foreach (var spm in bonus)
             {
