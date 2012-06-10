@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
+using System.Web.Security;
 using Tipping.Data;
 using Tipping.Models;
 
@@ -13,19 +15,25 @@ namespace Tipping.Controllers
 
         public ActionResult Index()
         {
+            var brukerCollection = Membership.GetAllUsers();
+            var brukere = new List<String>();
+            foreach (MembershipUser bruker in brukerCollection)
+            {
+                brukere.Add(bruker.UserName);
+            }
             var tips = DataAksessor.HentAlleTips();
             var bonustips = DataAksessor.HentAlleBonusTips();
             var kamper = DataAksessor.HentAlleKamper();
             var bonusspørsmål = DataAksessor.HentAlleBonus();
             var viewModel = new ResultatViewModel();
-            var perBruker = tips.GroupBy(ettTips => ettTips.TipperID);
-            var bonusTipsPerBruker = bonustips.GroupBy(ettTips => ettTips.TipperID);
-            var poengForKamper = perBruker.Select(bruker => new BrukerMedScore {Brukernavn = bruker.Key, Score = bruker.Sum(en => en.Poeng)}).OrderByDescending(bruker => bruker.Score).ToList();
-            var poengForBonus = bonusTipsPerBruker.Select(bruker => new BrukerMedScore { Brukernavn = bruker.Key, Score = bruker.Sum(en => en.Poeng) }).OrderByDescending(bruker => bruker.Score).ToList();
+            var perBruker = tips.GroupBy(ettTips => ettTips.TipperID.ToLower());
+            var bonusTipsPerBruker = bonustips.GroupBy(ettTips => ettTips.TipperID.ToLower());
+            var poengForKamper = perBruker.Select(bruker => new BrukerMedScore { Brukernavn = brukere.First(navn => navn.ToLower() == bruker.Key), Score = bruker.Sum(en => en.Poeng) }).OrderByDescending(bruker => bruker.Score).ToList();
+            var poengForBonus = bonusTipsPerBruker.Select(bruker => new BrukerMedScore { Brukernavn = brukere.First(navn => navn.ToLower() == bruker.Key), Score = bruker.Sum(en => en.Poeng) }).OrderByDescending(bruker => bruker.Score).ToList();
             var totalpoeng = poengForKamper.Select(brukerMedScore => new BrukerMedScore { Brukernavn = brukerMedScore.Brukernavn, Score = brukerMedScore.Score + poengForBonus.First(b => b.Brukernavn.ToLower() == brukerMedScore.Brukernavn.ToLower()).Score }).OrderByDescending(bruker => bruker.Score).ToList();
             viewModel.TotalPoengsum = totalpoeng;
-            viewModel.KamperMedFirePoeng = perBruker.Select(bruker => new BrukerMedScore { Brukernavn = bruker.Key, Score = bruker.Count(en => en.Poeng == 4) }).OrderByDescending(bruker => bruker.Score).ToList();
-            viewModel.KamperMedPoeng = perBruker.Select(bruker => new BrukerMedScore { Brukernavn = bruker.Key, Score = bruker.Count(en => en.Poeng > 0) }).OrderByDescending(bruker => bruker.Score).ToList();
+            viewModel.KamperMedFirePoeng = perBruker.Select(bruker => new BrukerMedScore { Brukernavn = brukere.First(navn => navn.ToLower() == bruker.Key), Score = bruker.Count(en => en.Poeng == 4) }).OrderByDescending(bruker => bruker.Score).ToList();
+            viewModel.KamperMedPoeng = perBruker.Select(bruker => new BrukerMedScore { Brukernavn = brukere.First(navn => navn.ToLower() == bruker.Key), Score = bruker.Count(en => en.Poeng > 0) }).OrderByDescending(bruker => bruker.Score).ToList();
             var perKamp = tips.GroupBy(ettTips => ettTips.KampID);
             var kamperMedPoeng = perKamp.Select(kamp => new KeyValuePair<int, int> (kamp.Key, kamp.Sum(en => en.Poeng))).OrderByDescending(en => en.Value);
             var maxScore = kamperMedPoeng.Max(k => k.Value);
